@@ -1,0 +1,9 @@
+{
+  "name": "pr-review-kit",
+  "version": "0.1.0",
+  "description": "Review a PR or branch and get a merge verdict plus one copy-paste markdown comment. Re-reviews check every earlier item, and non-blocking findings become ready-to-file issues.",
+  "author": {
+    "name": "josnif"
+  },
+  "keywords": ["code-review", "pull-request", "github", "review"]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "josnif-plugins",
+  "owner": {
+    "name": "josnif"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for everyday engineering workflows."
+  },
+  "plugins": [
+    {
+      "name": "pr-review-kit",
+      "source": "./plugins/pr-review-kit",
+      "description": "Review a PR or branch and get a merge verdict plus one copy-paste markdown comment. Re-reviews check every earlier item, and non-blocking findings become ready-to-file issues.",
+      "version": "0.1.0",
+      "category": "code-review"
+    }
+  ]
+}
