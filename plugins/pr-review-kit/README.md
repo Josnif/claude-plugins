@@ -21,7 +21,7 @@ Claude also picks these up without the slash command when you ask "can this bran
 ## Install
 
 ```text
-/plugin marketplace add <github-user>/<this-repo>
+/plugin marketplace add josnif/claude-plugins
 /plugin install pr-review-kit@josnif-plugins
 ```
 

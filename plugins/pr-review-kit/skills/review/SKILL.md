@@ -48,7 +48,7 @@ A finding goes in the comment only once you have verified it. Verify in this ord
    ```bash
    git worktree add --detach "$TMPDIR/pr-review-<sha>" <head>
    ```
-   Detect the toolchain from lockfiles and manifests (pnpm/npm/yarn/bun, cargo, go, uv/pip/poetry, maven/gradle, make). Mirror what CI does (read `.github/workflows/*`, for example a `build` before `test` in monorepos). Run installs offline or with a frozen lockfile where possible.
+   Detect the toolchain and mirror CI using `references/toolchains.md`. It covers PHP/Laravel, Node, Python, Go, Rust, JVM, Ruby and make, including Laravel's env, database and migration rollback checks.
 3. **Reproduce at runtime** when a claim depends on data or HTTP behaviour: a throwaway database container (`docker run --rm` postgres/mysql/redis on a free port), run the migrations, start the service, hit it with curl. Check first that Docker is running (`docker info`). If it isn't, say so; don't ask the user to start it unless runtime proof is essential.
 4. If a test fails, decide whether it is **environmental** (missing DB or env var, packages not built) or **real**. Compare against base before blaming the PR.
 5. Remove the worktree and any containers you started.

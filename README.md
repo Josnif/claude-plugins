@@ -9,7 +9,7 @@ A Claude Code plugin marketplace.
 ## Install
 
 ```text
-/plugin marketplace add <github-user>/<this-repo>
+/plugin marketplace add josnif/claude-plugins
 /plugin install pr-review-kit@josnif-plugins
 ```
 

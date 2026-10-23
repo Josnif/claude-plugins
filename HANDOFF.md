@@ -28,4 +28,4 @@ The built-in `/code-review` finds bugs but gives no verdict, writes no single pa
 2. Check that `${CLAUDE_PLUGIN_ROOT}` resolves inside SKILL.md bodies (the rereview skill uses it to reach the review skill's references). If it doesn't, copy the reference files into each skill.
 3. Decide whether to add a `--comment` mode that posts via `gh` after confirmation, or keep it copy-paste only (current choice).
 4. Consider a small agent for the verification step (worktree build/test plus Docker repro), so the main context stays clean on large PRs.
-5. Create the GitHub repo, then replace `<github-user>/<this-repo>` in both READMEs. The user commits and pushes themselves.
+5. Create the GitHub repo `josnif/claude-plugins` (READMEs already point to it). The user commits and pushes themselves.
